@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMANS GALLARY</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170/examples/jsm/"
+          }
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <h1>WELCOME...</h1>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2 class="collapsible"><span class="triangle">&#9654;</span> About</h2>
+            <div class="content">
+                <img src="public/images/gameUIintro.png" alt="Retro game UI intro card" class="about-image">
+                <p>Hi, I’m Tarek Eltantawy—a creator at heart with a love for sculpting and a passion for bringing ideas to life in all forms. I’m a student at the University of Miami, originally from South Florida, and I’m inspired by the endless ways technology and art can come together to shape new experiences.</p>
+                <p>My goal is to create immersive projects that blend traditional craftsmanship with modern technology, pushing the boundaries of what art can achieve. I work with a range of mediums, from clay and ceramics to 3D modeling and programming, constantly exploring new tools to expand my creative possibilities.</p>
+                <p>I believe every creation tells a story, and my mission is to bring those stories to life in ways that resonate and inspire. Feel free to explore my portfolio and reach out if you'd like to collaborate or connect—I’d love to hear from you!</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="collapsible"><span class="triangle">&#9654;</span> Projects</h2>
+            <div class="content">
+                <h3 class="sub-collapsible"><span class="triangle">&#9654;</span> FREDDY</h3>
+                <div class="content">
+                    <img id="freddy-image" src="public/images/freddy.png" alt="FREDDY project image" class="project-image">
+                </div>
+                <h3 class="sub-collapsible"><span class="triangle">&#9654;</span> Eye Vase</h3>
+                <div class="content">
+                    <img id="eyevase-image" src="public/images/eyeVase.png" alt="Eye Vase project image" class="project-image">
+                </div>
+            </div>
+        </section>
+        <div id="model-viewer" style="display:none;">
+            <button id="close-viewer">Close</button>
+            <div id="model-container" style="width: 100%; height: 100vh;"></div>
+        </div>
+        <section id="contact">
+            <h2 class="collapsible"><span class="triangle">&#9654;</span> Contact</h2>
+            <div class="content">
+                <p>
+                    <a href="https://www.instagram.com/tbecarving/" target="_blank">Follow me on Instagram</a>
+                </p>
+                <p>
+                    <a href="mailto:tarekeltantawy0205@gmail.com">Send me an email</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

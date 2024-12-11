@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./public/fonts/scoreboard.ttf') format('truetype');
+}
+
+body {
+    background-color: black;
+    color: rgb(21, 255, 0);
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+header, main, footer {
+    color: rgb(21, 255, 0);
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+header {
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 100px; /* Adjust the spacing below the header */
+}
+
+.collapsible {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+.sub-collapsible {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 30px; /* Smaller font size for subheaders */
+    margin-left: 50px; /* Indent the subheaders */
+    margin-top: 10px; /* Adjust the spacing above the sub-collapsible sections */
+}
+
+.triangle {
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+}
+
+.about-image{
+    width: 40%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.project-image {
+    width: 20%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+#model-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#model-container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+#close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Ensure all links have the same color as the rest of the text */
+#contact .content a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Optional: Add a hover effect */
+#contact .content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

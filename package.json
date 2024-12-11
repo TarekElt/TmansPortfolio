@@ -1,0 +1,20 @@
+{
+  "name": "weblabfinal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "three": "^0.132.2"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  }
+}
